@@ -1,7 +1,31 @@
 <!doctype html>
 <html>
   <head>
-    
+    <style>
+      body {
+        font-family: "Palatino Linotype";
+      }
+      
+      details {
+        margin-left: 2em;
+        padding: 0.5em;
+        background-color: lightgray;
+        
+        summary {
+          font-family: "Gill Sans MT", sans-serif;
+          font-weight: 600;
+        }
+        
+        &[open] summary {
+          border-bottom: 1px solid black;
+        }
+      }
+      
+      footer {
+        margin-top: 3em;
+        border-top: 2px solid black;
+      }
+    </style>
   </head>
   <body>
     <details open>
