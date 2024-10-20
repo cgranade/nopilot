@@ -7,19 +7,27 @@
         --sans-serif: "Gill Sans MT", sans-serif;
         --contrast-bg: black;
         --contrast-fg: white;
+        --highlight-bg: lightgray;
+
+        color: black;
+        background-color: white;
       }
 
       @media (prefers-color-scheme: dark) {
         body {
           --contrast-bg: white;
           --contrast-fg: black;
+          --highlight-bg: darkgray;
+
+          color: lightgray;
+          background-color: black;
         }
       }
       
       details {
         margin-left: 2em;
         padding: 0.5em;
-        background-color: lightgray;
+        background-color: var(--highlight-bg);
         
         summary {
           font-family: var(--sans-serif);
