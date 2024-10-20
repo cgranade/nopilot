@@ -4,6 +4,7 @@
     <style>
       body {
         font-family: "Palatino Linotype";
+        --sans-serif: "Gill Sans MT", sans-serif;
       }
       
       details {
@@ -12,7 +13,7 @@
         background-color: lightgray;
         
         summary {
-          font-family: "Gill Sans MT", sans-serif;
+          font-family: var(--sans-serif);
           font-weight: 600;
         }
         
@@ -24,6 +25,13 @@
       footer {
         margin-top: 3em;
         border-top: 2px solid black;
+      }
+    
+      header h1 {
+        font-size: 32pt;
+        color: white;
+        background-color: black;
+        font-family: var(--sans-serif);
       }
     </style>
   </head>
@@ -39,7 +47,9 @@
       </p>
     </details>
     
-    <h1>nopilot</h1>
+    <header>
+      <h1>nopilot</h1>
+    </header>
 
     <p>
       When someone sends you a draft of their work, whether that's a technical writeup, a recipe for the best goddamn brownies you've ever tasted, a heartfelt and heartbreaking poem, or a fanfic of your favorite slash, they're trusting you to treat that work with love and respect. Unfortunately, modern software has made it harder and harder for us to uphold the trust, love, and respect with which people share their words with us. AI assistants and "copilots" can abuse that trust to train on and plagarize work, can suggest crude and inhuman edits, and can grant copyright permissions to giant corporations that fail to uphold that trust.
