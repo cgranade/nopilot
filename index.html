@@ -9,6 +9,8 @@
         --contrast-fg: white;
         --highlight-bg: lightgray;
         --highlight-fg: black;
+        --link-color: blue;
+        --visited-color: purple;
 
         color: black;
         background-color: white;
@@ -22,10 +24,20 @@
           --contrast-bg: white;
           --contrast-fg: black;
           --highlight-bg: dimgray;
+          --link-color: skyblue;
+          --visited-color: lightpink;
           --highlight-fg: white;
 
           color: lightgray;
           background-color: black;
+        }
+      }
+
+      a {
+        color: var(--link-color);
+
+        &:visited {
+          color: var(--visited-color);
         }
       }
       
