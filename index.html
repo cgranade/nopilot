@@ -70,24 +70,13 @@
       }
     </style>
   </head>
-  <body>
-    <details open>
-      <summary>Status of this page</summary>
-      <p>
-        This page is currently being written, and is live only for the purpose of gathering feedback and comments. If you've not been specifically asked to look at this page, you're still welcome here, but please keep in mind that it's currently very rough, and may not be the most helpful resource for you until it's in a more complete state.
-      </p>
-
-      <p>
-        Specifically, some sections are still stubbed out as TODO, and links to resources are almost completely absent. Those will be fixed, give it a little time! ♥
-      </p>
-    </details>
-    
+  <body>    
     <header>
       <h1>nopilot</h1>
     </header>
 
     <p>
-      When someone sends you a draft of their work, whether that's a technical writeup, a recipe for the best goddamn brownies you've ever tasted, a heartfelt and heartbreaking poem, or a fanfic of your favorite slash, they're trusting you to treat that work with love and respect. Unfortunately, modern software has made it harder and harder for us to uphold the trust, love, and respect with which people share their words with us. AI assistants and "copilots" can abuse that trust to train on and plagarize work, can suggest crude and inhuman edits, and can grant copyright permissions to giant corporations that fail to uphold that trust.
+      When someone sends you a draft of their work, whether that's a technical writeup, a recipe for the best goddamn brownies you've ever tasted, a heartfelt and heartbreaking poem, or a fanfic of your favorite slash, they're trusting you to treat that work with love and respect. Unfortunately, modern software has made it harder and harder for us to uphold the trust, love, and respect with which people share their words with us. AI assistants and "copilots" can abuse that trust to train on and plagiarize work, can suggest crude and inhuman edits, and can grant copyright permissions to giant corporations that fail to uphold that trust.
     </p>
 
     <details>
@@ -99,18 +88,29 @@
         Similarly, this page was written on a volunteer basis, and while every reasonable effort is taken to be accurate and useful, no warranty is offered to that effect.
       </p>
       <p>
-        You may see similar disclaimers offered by AI chatbots: the difference that the authors of this page care, the truth matters to them, but ultimately they're human with all the correponding limitations on expertise and knowledge that come along with that. AI chatbots do not and cannot care, and truth is simply not a goal that they are designed to achieve.
+        You may see similar disclaimers offered by AI chatbots: the difference that the authors of this page care, the truth matters to them, but ultimately they're human with all the corresponding limitations on expertise and knowledge that come along with that. AI chatbots do not and cannot care, and truth is simply not a goal that they are designed to achieve.
       </p>
     </details>
 
     <h1>What is AI? What are copilots? Why should you care?</h1>
     <p>
-      You've probably seen the term <em>artifical intelligence</em>, or AI for short, a lot lately. It's become the latest tech buzzword, completely eclipsing the hype of every other buzzword in recent memory. Every product, service, and device seems to advertise AI features, so it's a bit confusing trying to figure out what AI even is. Unfortunately, this page won't be able to help a lot there &mdash; the term is intentionally confusing, and as a marketing decision. For decades, "AI" has referred to different fields of research within computer science (often related to machine learning), or alternatively, to the kinds of techniques used to make convincing characters in video games.
+      You've probably seen the term <em>artificial intelligence</em>, or AI for short, a lot lately. It's become the latest tech buzzword, completely eclipsing the hype of every other buzzword in recent memory. Every product, service, and device seems to advertise AI features, so it's a bit confusing trying to figure out what AI even is. Unfortunately, this page won't be able to help a lot there &mdash; the term is intentionally confusing, and as a marketing decision. For decades, "AI" has referred to different fields of research within computer science (often related to machine learning), or alternatively, to the kinds of techniques used to make convincing characters in video games.
     </p>
 
     <p>
-      As of late, however, the term AI gets much more commonly used to refer either to <abbr title="large language models">LLMs</abbr> like ChatGPT, which generate plausible sounding text, or to <abbr title="generative adversarial networks">GANs</abbr> like Midjourney, which are most often used to generate plausible looking images. Increasingly, LLMs are included as features in modern software, presented as "chatbots," "assistants," or "copilots." They may appear as more sophisticated autocompletes, adding in more text that sounds vaugely like the text you've already written, or may be presented as tools for performing research, and even generating whole documents automatically.
+      As of late, however, the term AI gets much more commonly used to refer either to <abbr title="large language models">LLMs</abbr> like ChatGPT, which generate plausible sounding text, or to <abbr title="generative adversarial networks">GANs</abbr> like Midjourney, which are most often used to generate plausible looking images. Increasingly, LLMs are included as features in modern software, presented as "chatbots," "assistants," or "copilots." They may appear as more sophisticated autocomplete engines, adding in more text that sounds vaguely like the text you've already written, or may be presented as tools for performing research, and even generating whole documents automatically.
     </p>
+
+    <details>
+      <summary>More information about LLMs</summary>
+      <p>
+        Due to their inherently random and unpredictable nature, as well as their inability to synthasize new information, LLMs are often called <a href="https://faculty.washington.edu/ebender/stochasticparrots/">"stochastic parrots"</a>. Due to the immense hype around LLMs, it's often hard to get reliable and correct information about them and how they work.
+      </p>
+
+      <p>
+        The basic principle is fairly straightforward, though: large language models work by learning the correlations between different words by analyzing immense amounts of text. Words that commonly appear together in training data are thus more likely to appear together in the outputs of an LLM. Effectively, LLMs plagiarize from their training data to find text that could plausibly follow a given prompt. Notably, LLMs are not in general able to provide factual information, as correlation does not imply truthfulness, accuracy, or veracity. LLMs are sometimes said to "hallucinate" as a result; this page avoids the term, however, as it describes how LLMs inherently work, and not a fault or flaw in their operation.
+      </p>
+    </details>
     
     <p>
       Both LLMs and GANs rely on immense amount of computational power, and require truly staggering amounts of data to create (or "train") in the first place. Whereas humans can learn to write and talk from a relatively small number of examples, LLMs are often trained on huge parts of the entire accessible Internet; far more than a human could ever reasonably read. As a result, data that can be used to train LLMs &mdash; that is to say, examples of human-written text &mdash; have become incredibly valuable. Sites like Reddit and Stack Overflow have made much of their recent revenue by selling user posts as training data, while many pieces of software you might use on a day-to-day basis can siphon off your data for training new LLMs.
@@ -118,7 +118,7 @@
     
     <h1>Please don't open stuff in Microsoft Word</h1>
     <p>
-      In some recent versions of Microsoft Office, Word includes copilots by default. Your terms of service with Microsoft not only allow for this, but may allow Microsoft to use documents that you open to train new versions of AI chatbots, autocompletion engines, and copilots. If it's your words that you're sharing with Microsoft, and you go in knowing that's what could happen with your work, by all means &mdash; please don't let anything on this page dissuade you from doing what you want and consent to with your words. Microsoft Word is, for all the faults highlighted here, a mature product with decades of expertise behind it, and may fit your needs perfectly.
+      In some recent versions of Microsoft Office, Word includes copilots by default. Your <a href="https://www.microsoft.com/en-us/servicesagreement">terms of service</a> with Microsoft not only allow for this, but may allow Microsoft to use documents that you open to train new versions of AI chatbots, autocompletion engines, and copilots. If it's your words that you're sharing with Microsoft, and you go in knowing that's what could happen with your work, by all means &mdash; please don't let anything on this page dissuade you from doing what you want and consent to with your words. Microsoft Word is, for all the faults highlighted here, a mature product with decades of expertise behind it, and may fit your needs perfectly.
     </p>
 
     <p>
@@ -144,7 +144,11 @@
     </p>
 
     <p>
-      TODO: finish this section, mention difficulties with mobile/web versions
+      While LibreOffice does not have a mobile version, tools like <a href="https://www.collaboraonline.com/collabora-office-android-ios/">Collabora Office</a> can help you avoid AI training when using your phone or tablet.
+    </p>
+
+    <p>
+      Outside of LibreOffice and Collabora Office, some competitors to Microsoft Office and Google Docs may offer better terms of service. As of this writing, while <a href="https://www.zoho.com/writer/">Zoho Writer</a> does sell AI-based products, their <a href="https://www.zoho.com/terms.html">terms of service</a> do not currently appear to claim ownership or training rights to documents opened with their services.
     </p>
 
     <h1>What you can do to make things easier for everyone</h1>
@@ -159,6 +163,15 @@
     <h2>*.docx vs *.odt</h2>
     <p>
       The easiest step that you can take is to consider using formats other than Word's own *.docx format. International standards bodies have settled on a different format, known as <strong>OpenDocument</strong>, as it's easier to share, archive, and preserve OpenDocument files. Word, Google Docs, and LibreOffice all understand and can interoperate with OpenDocument text files, using *.odt filenames. When saving and sharing your work, making sure to choose OpenDocument <em>even if you also provide a *.docx</em> can help reduce and oppose Microsoft's monopoly over the written word.
+    </p>
+
+    <h2>Share with your friends and colleagues</h2>
+    <p>
+      It's easier to avoid AI training and corporate monopolies when we work together. There's power in letting others know that <em>your</em> boundaries are important, and that there's alternatives that can help people respect your boundaries.
+    </p>
+
+    <p>
+      Consider adding a link to <a href="https://nopilot.xyz">https://nopilot.xyz</a> to your e-mail signature, your social media bio, or other places where you might share your work.
     </p>
 
     <footer>
