@@ -17,6 +17,8 @@
         
         margin-left: 1em;
         margin-right: 1em;
+        
+        font-size: 160%;
       }
 
       @media (prefers-color-scheme: dark) {
@@ -31,6 +33,13 @@
           color: lightgray;
           background-color: black;
         }
+      }
+
+      @media only screen and (max-device-width: 1024px) {
+        body {
+          zoom: 3; 
+          font-size: 300%;
+        }  
       }
 
       a {
@@ -67,7 +76,7 @@
         color: var(--contrast-fg);
         background-color: var(--contrast-bg);
         font-family: var(--sans-serif);
-      }
+      }    
     </style>
   </head>
   <body>    
